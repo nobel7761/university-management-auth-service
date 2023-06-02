@@ -11,10 +11,10 @@
   
     "rules": {
       "no-unused-vars": "error",
-      "no-console": "error",
-      "no-undef":"error",
-      "no-unused-expressions": "error",
-      "no-unreachable": "error",
+      "no-console": "error", //for removing console log
+      "no-undef":"error", //for undefined variable
+      "no-unused-expressions": "error", //for unused expression
+      "no-unreachable": "error", //for unreachable code
       "consistent-type-definitions": ["error", "type"]
     },
   
