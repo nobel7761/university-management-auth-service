@@ -15,11 +15,11 @@
       "no-undef":"error", //for undefined variable
       "no-unused-expressions": "error", //for unused expression
       "no-unreachable": "error", //for unreachable code
-      "consistent-type-definitions": ["error", "type"]
+      "@typescript-eslint/consistent-type-definitions" : ["error", "type"]
     },
   
     "env": {
-      "browser": true,
+      "node": true,
       "es2021": true
     }
   }
