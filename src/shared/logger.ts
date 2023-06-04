@@ -8,7 +8,7 @@ const logger = winston.createLogger({
     new winston.transports.Console(),
     new winston.transports.File({
       filename: path.join(process.cwd(), 'logs', 'winston', 'success.log'),
-      level: 'info',
+      level: 'error',
     }),
   ],
 })
