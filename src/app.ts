@@ -19,9 +19,10 @@ app.use('/api/v1/users', UserRoutes)
 //   throw new ApiError(400, 'Testing Error logger')
 // })
 
-app.get('/', async (req: Request, res: Response) => {
-  Promise.reject(new Error('unhandled promise rejection'))
-})
+//Testing
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('Testing Error logger')
+// })
 
 //global error handler
 app.use(globalErrorHandler)
