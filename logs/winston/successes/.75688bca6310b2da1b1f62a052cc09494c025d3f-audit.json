@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\.75688bca6310b2da1b1f62a052cc09494c025d3f-audit.json",
+    "files": [
+        {
+            "date": 1686203213542,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-08-06-11-success.log",
+            "hash": "2041440e8a367c7f501e09b1c8d9a83468052adac1e0ce494c8c525ac73a6ab1"
+        },
+        {
+            "date": 1686208403298,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-08-06-13-success.log",
+            "hash": "f86e53c176e33a640001f22daa20bc0b1d24cc61eab82e70424b0bf28d334a41"
+        },
+        {
+            "date": 1686544542003,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-12-06-10-success.log",
+            "hash": "b0f0d224146600d7a2d40750ff669d8a50adc2f2b7605b7f6ffdd70a52044417"
+        },
+        {
+            "date": 1686548695941,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-12-06-11-success.log",
+            "hash": "3e8ed26b4d16ce32290f7ccefc786b6387d086f2dbb6271fcdcb6c1a52e4cdc9"
+        },
+        {
+            "date": 1686549852367,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-12-06-12-success.log",
+            "hash": "2dcb5034403d6bd00c92de912fef96da5359e270abf82bc993a51eac54b684d6"
+        }
+    ],
+    "hashType": "sha256"
+}

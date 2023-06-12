@@ -1,4 +1,4 @@
-import { User } from './users.model'
+import { User } from './user.model'
 
 export const findLastUSerId = async () => {
   const lastUser = await User.findOne({}, { id: 1, _id: 0 }) //by default mongoDB return default mongoDB ID(_id). we are just enabling false to make sure that mongoDB will not return its own _id

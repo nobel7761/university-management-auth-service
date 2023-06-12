@@ -11,7 +11,7 @@
   
     "rules": {
       "no-unused-vars": "error",
-      "no-console": "error", //for removing console log
+      "no-console": "warn", //this will show warning if there is any console.log in the application. use "error" for showing error.
       "no-undef":"error", //for undefined variable
       "no-unused-expressions": "error", //for unused expression
       "no-unreachable": "error", //for unreachable code
@@ -21,5 +21,8 @@
     "env": {
       "node": true,
       "es2021": true
+    },
+    "globals": {
+      "process":"readonly"
     }
   }
