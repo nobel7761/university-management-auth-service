@@ -25,7 +25,6 @@ const createSemester = catchAsync(async (req: Request, res: Response) => {
 
 const getAllSemesters = catchAsync(async (req: Request, res: Response) => {
   const paginationOptions = pick(req.query, paginationFields);
-  // console.log(paginationOptions);
 
   const result = await AcademicSemesterService.getAllSemesters(
     paginationOptions
@@ -38,8 +37,6 @@ const getAllSemesters = catchAsync(async (req: Request, res: Response) => {
     meta: result.meta,
     data: result.data,
   });
-
-  // next();
 });
 
 export const AcademicSemesterController = {
