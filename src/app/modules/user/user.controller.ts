@@ -1,11 +1,11 @@
 import httpStatus from 'http-status';
-import { NextFunction, Request, RequestHandler, Response } from 'express';
+import { Request, RequestHandler, Response } from 'express';
 import { UserService } from './user.service';
 import catchAsync from '../../../shared/catchAsync';
 import sendResponse from '../../../shared/sendResponse';
 
 const createUser: RequestHandler = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const { user } = req.body;
     const result = await UserService.createUser(user);
 
@@ -16,7 +16,7 @@ const createUser: RequestHandler = catchAsync(
       data: result,
     });
 
-    next();
+    // next();
   }
 );
 
