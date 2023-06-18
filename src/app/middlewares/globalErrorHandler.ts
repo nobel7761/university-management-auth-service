@@ -8,6 +8,7 @@ import ApiError from '../../errors/ApiError';
 import { errorlogger } from '../../shared/logger';
 import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
+import handleCastError from '../../errors/handleCastError';
 
 const globalErrorHandler: ErrorRequestHandler = (
   error,
@@ -53,6 +54,11 @@ const globalErrorHandler: ErrorRequestHandler = (
           },
         ]
       : [];
+  } else if (error?.name === 'CastError') {
+    const simplifiedError = handleCastError(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
   }
 
   res.status(statusCode).json({
