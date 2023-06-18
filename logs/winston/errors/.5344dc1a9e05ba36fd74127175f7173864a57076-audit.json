@@ -59,6 +59,11 @@
       "date": 1687060821667,
       "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\errors\\2023-18-06-10-error.log",
       "hash": "02c84eb7ca1dab20f05fbfcd81a1aefd7b42961fa8dace4269359003ae4d03db"
+    },
+    {
+      "date": 1687064525901,
+      "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\errors\\2023-18-06-11-error.log",
+      "hash": "72c20c8a8189817f95ae2ff86fa5e8a3d8645db023c70f891631f559b32bfcaa"
     }
   ],
   "hashType": "sha256"
