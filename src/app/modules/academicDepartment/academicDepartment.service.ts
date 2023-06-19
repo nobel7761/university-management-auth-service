@@ -79,7 +79,9 @@ const getAllDepartment = async (
 const getDepartmentById = async (
   id: string
 ): Promise<IAcademicDepartment | null> => {
-  const result = await AcademicDepartment.findById(id);
+  const result = await AcademicDepartment.findById(id).populate(
+    'academicFaculty'
+  );
   return result;
 };
 
@@ -93,7 +95,16 @@ const updateDepartmentById = async (
     {
       new: true,
     }
-  );
+  ).populate('academicFaculty');
+  return result;
+};
+
+const deleteDepartmentById = async (
+  id: string
+): Promise<IAcademicDepartment | null> => {
+  const result = await AcademicDepartment.findByIdAndDelete({
+    _id: id,
+  }).populate('academicFaculty');
   return result;
 };
 
@@ -102,4 +113,5 @@ export const AcademicDepartmentService = {
   getAllDepartment,
   getDepartmentById,
   updateDepartmentById,
+  deleteDepartmentById,
 };

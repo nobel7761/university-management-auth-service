@@ -14,6 +14,7 @@ router.post(
 );
 
 router.get('/:id', AcademicDepartmentController.getDepartmentById);
+
 router.patch(
   '/:id',
   validateRequest(
@@ -21,6 +22,8 @@ router.patch(
   ),
   AcademicDepartmentController.updateDepartmentById
 );
+
+router.delete('/:id', AcademicDepartmentController.deleteDepartment);
 
 router.get('/', AcademicDepartmentController.getAllDepartment);
 
