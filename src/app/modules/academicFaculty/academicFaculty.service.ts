@@ -78,8 +78,19 @@ const getFacultyById = async (id: string): Promise<IAcademicFaculty | null> => {
   return result;
 };
 
+const updateFacultyById = async (
+  id: string,
+  payload: Partial<IAcademicFaculty>
+): Promise<IAcademicFaculty | null> => {
+  const result = await AcademicFaculty.findOneAndUpdate({ _id: id }, payload, {
+    new: true,
+  });
+  return result;
+};
+
 export const AcademicFacultyService = {
   createFaculty,
   getAllFaculty,
   getFacultyById,
+  updateFacultyById,
 };

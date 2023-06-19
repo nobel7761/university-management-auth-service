@@ -52,8 +52,25 @@ const getFacultyById = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const updateFacultyById = catchAsync(async (req: Request, res: Response) => {
+  const id = req.params.id;
+  const updatedData = req.body;
+  const result = await AcademicFacultyService.updateFacultyById(
+    id,
+    updatedData
+  );
+
+  sendResponse<IAcademicFaculty>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic Faculty updated successfully',
+    data: result,
+  });
+});
+
 export const AcademicFacultyController = {
   createFaculty,
   getAllFaculty,
   getFacultyById,
+  updateFacultyById,
 };
