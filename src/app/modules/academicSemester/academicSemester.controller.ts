@@ -47,7 +47,7 @@ const getSingleSemester = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IAcademicSemester>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Academic Semester created successfully',
+    message: 'Single Academic Semester retrieved successfully',
     data: result,
   });
 });
