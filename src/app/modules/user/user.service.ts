@@ -2,11 +2,11 @@ import config from '../../../config';
 import ApiError from '../../../errors/ApiError';
 import { IUser } from './user.interface';
 import { User } from './user.model';
-import { generateUserId } from './user.utils';
+import { generateFacultyId } from './user.utils';
 
 const createUser = async (user: IUser): Promise<IUser | null> => {
   //!auto generated incremental id
-  const id = await generateUserId();
+  const id = await generateFacultyId();
   user.id = id; //we have to set the id into the user object
 
   //!default password. because, once the id was generated from the admin for a student there will be a default password!
