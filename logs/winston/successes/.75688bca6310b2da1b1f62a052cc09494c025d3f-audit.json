@@ -104,6 +104,16 @@
             "date": 1687237241412,
             "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-20-06-11-success.log",
             "hash": "ff976ff96b34514173b8a9565e862856a717b0b8becf0b7f188a3a737a8283c0"
+        },
+        {
+            "date": 1687408325467,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-22-06-10-success.log",
+            "hash": "3829ce62004d6e58a0065f7d188589235ec1dd84353753d390ad453303b460a2"
+        },
+        {
+            "date": 1687410169152,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-22-06-11-success.log",
+            "hash": "a3c50712fbbe9d13ef3fcd1010d26d29a9de025e70f1fa87eb18ca7c874138c2"
         }
     ],
     "hashType": "sha256"
