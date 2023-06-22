@@ -114,6 +114,11 @@
             "date": 1687410169152,
             "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-22-06-11-success.log",
             "hash": "a3c50712fbbe9d13ef3fcd1010d26d29a9de025e70f1fa87eb18ca7c874138c2"
+        },
+        {
+            "date": 1687413813174,
+            "name": "C:\\Nobel\\L2\\university-management-auth-service\\logs\\winston\\successes\\2023-22-06-12-success.log",
+            "hash": "55a2e3b3751496989d52d184813947b3e94949ff03eafb6e78587557dfedafc7"
         }
     ],
     "hashType": "sha256"
