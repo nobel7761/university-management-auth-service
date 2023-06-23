@@ -29,8 +29,8 @@ const createStudent = async (
     student.academicSemester
   );
 
-  const session = await mongoose.startSession();
   let newUserAllData = null;
+  const session = await mongoose.startSession();
 
   try {
     //!start session

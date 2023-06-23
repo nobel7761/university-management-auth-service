@@ -28,7 +28,7 @@ export type LocalGuardian = {
 
 export type IStudent = {
   id: string;
-  name: UserName;
+  name: UserName; // embedded object
   dateOfBirth: string;
   gender: 'male' | 'female';
   bloodGroup?: 'A+' | 'A-' | 'B+' | 'B' | 'O+' | 'O-' | 'AB+' | 'AB-';
@@ -37,11 +37,24 @@ export type IStudent = {
   emergencyContactNo: string;
   presentAddress: string;
   permanentAddress: string;
-  guardian: Guardian;
-  localGuardian: LocalGuardian;
+  guardian: Guardian; // embedded object
+  localGuardian: LocalGuardian; // embedded object
   profileImage?: string;
-  academicFaculty: Types.ObjectId | IAcademicFaculty;
-  academicDepartment: Types.ObjectId | IAcademicDepartment;
-  academicSemester: Types.ObjectId | IAcademicSemester;
+  academicFaculty: Types.ObjectId | IAcademicFaculty; // reference _id
+  academicDepartment: Types.ObjectId | IAcademicDepartment; // reference _id
+  academicSemester: Types.ObjectId | IAcademicSemester; // reference _id
 };
 export type StudentModel = Model<IStudent, Record<string, unknown>>;
+
+export type IStudentFilters = {
+  searchTerm?: string;
+  id?: string;
+  gender?: string;
+  bloodGroup?: string;
+  email?: string;
+  contactNo?: string;
+  academicDepartment?: string;
+  academicSemester?: string;
+  academicFaculty?: string;
+  emergencyContactNo?: string;
+};
