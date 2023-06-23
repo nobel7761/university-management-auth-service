@@ -70,7 +70,7 @@ const getAllStudents = async (
 };
 
 const getStudentById = async (id: string): Promise<IStudent | null> => {
-  const result = await Student.findById(id)
+  const result = await Student.findOne({ id: id })
     .populate('academicSemester')
     .populate('academicDepartment')
     .populate('academicFaculty');
@@ -128,7 +128,7 @@ const updateStudentById = async (
 };
 
 const deleteStudentById = async (id: string): Promise<IStudent | null> => {
-  const result = await Student.findByIdAndDelete({ _id: id })
+  const result = await Student.findOneAndDelete({ id: id })
     .populate('academicSemester')
     .populate('academicDepartment')
     .populate('academicFaculty');
