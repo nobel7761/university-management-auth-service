@@ -1,0 +1,3 @@
+Tue Jun 20 2023 10:4:0 [UMAS] error: Cannot read properties of undefined (reading 'year')
+Tue Jun 20 2023 10:4:24 [UMAS] error: Cannot read properties of undefined (reading 'year')
+Tue Jun 20 2023 10:36:43 [UMAS] error: E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "250100012" }
