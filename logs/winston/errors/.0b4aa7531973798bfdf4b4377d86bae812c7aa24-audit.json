@@ -124,6 +124,16 @@
             "date": 1687583563247,
             "name": "E:\\L2\\university-management-auth-service\\logs\\winston\\errors\\2023-24-06-11-error.log",
             "hash": "9c6d210853b848520738afba716e6e8ef194b2333e1d0081d96eb3b6eb945a00"
+        },
+        {
+            "date": 1687623008545,
+            "name": "E:\\L2\\university-management-auth-service\\logs\\winston\\errors\\2023-24-06-22-error.log",
+            "hash": "fd0a0b202945322e69d9b709e72b513858a241f94a06dbd8097eac9ae10575a8"
+        },
+        {
+            "date": 1687685799190,
+            "name": "E:\\L2\\university-management-auth-service\\logs\\winston\\errors\\2023-25-06-15-error.log",
+            "hash": "ec8eec29955dec16ed377d7b43a729b09b841c75805a51aaea4004ad27acfeb9"
         }
     ],
     "hashType": "sha256"

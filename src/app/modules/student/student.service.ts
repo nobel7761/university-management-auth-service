@@ -147,7 +147,7 @@ const deleteStudentById = async (id: string): Promise<IStudent | null> => {
     );
 
     if (!student) {
-      throw new ApiError(404, 'Failed to delete student');
+      throw new ApiError(httpStatus.NOT_FOUND, 'Failed to delete student');
     }
 
     //delete user from student collection
