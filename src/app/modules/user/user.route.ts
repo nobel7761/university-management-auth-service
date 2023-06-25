@@ -5,13 +5,19 @@ import validateRequest from '../../middlewares/validateRequest';
 
 const router = express.Router();
 
+// create student
 router.post(
   '/create-student',
-  validateRequest(userValidation.createUserZodSchema),
+  validateRequest(userValidation.createStudentZodSchema),
   UserController.createStudent
 );
 
 // create faculty
+router.post(
+  '/create-faculty',
+  validateRequest(userValidation.createFacultyZodSchema),
+  UserController.createFaculty
+);
 
 // create admin
 
