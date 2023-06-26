@@ -239,7 +239,7 @@ const createAdmin = async (
       path: 'admin',
       populate: [
         {
-          path: 'academicDepartment',
+          path: 'managementDepartment',
         },
       ],
     });

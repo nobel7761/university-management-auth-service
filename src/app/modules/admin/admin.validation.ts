@@ -20,7 +20,7 @@ const updateAdminZodSchema = z.object({
     emergencyContactNo: z.string().optional(),
     designation: z.string().optional(),
     profileImage: z.string().optional(),
-    academicDepartment: z.string().optional(),
+    managementDepartment: z.string().optional(),
   }),
 });
 

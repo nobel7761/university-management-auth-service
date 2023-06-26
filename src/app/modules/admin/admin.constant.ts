@@ -14,6 +14,6 @@ export const adminFilterableFields = [
   'gender',
   'email',
   'contactNo',
-  'academicDepartment',
+  'managementDepartment',
   'emergencyContactNo',
 ];
