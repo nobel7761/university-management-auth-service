@@ -10,6 +10,7 @@ import { Student } from '../student/student.model';
 import httpStatus from 'http-status';
 import { Faculty } from '../faculty/faculty.model';
 import { IFaculty } from '../faculty/faculty.interface';
+import { ENUM_USER_ROLE } from '../../../enums/user';
 
 const createStudent = async (
   student: IStudent,
@@ -102,7 +103,7 @@ const createFaculty = async (
   }
 
   //!set role
-  user.role = 'faculty';
+  user.role = ENUM_USER_ROLE.FACULTY;
 
   let newUserAllData = null;
   const session = await mongoose.startSession();
