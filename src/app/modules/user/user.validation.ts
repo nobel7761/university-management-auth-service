@@ -137,8 +137,8 @@ const createAdminZodSchema = z.object({
         required_error: 'Emergency Contact Number is required.',
       }),
       designation: z.string({ required_error: 'Designation is required.' }),
-      academicDepartment: z.string({
-        required_error: 'Academic Department is required.',
+      managementDepartment: z.string({
+        required_error: 'Management Department is required.',
       }),
       profileImage: z.string().optional(),
     }),

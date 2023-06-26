@@ -51,7 +51,7 @@ const getAllAdmins = async (
     andConditions.length > 0 ? { $and: andConditions } : {};
 
   const result = await Admin.find(whereConditions)
-    .populate('academicDepartment')
+    .populate('managementDepartment')
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
@@ -69,7 +69,9 @@ const getAllAdmins = async (
 };
 
 const getAdminById = async (id: string): Promise<IAdmin | null> => {
-  const result = await Admin.findOne({ id: id }).populate('academicDepartment');
+  const result = await Admin.findOne({ id: id }).populate(
+    'managementDepartment'
+  );
   return result;
 };
 
@@ -101,7 +103,7 @@ const updateAdminById = async (
 
   const result = await Admin.findOneAndUpdate({ id: id }, updatedAdminData, {
     new: true,
-  }).populate('academicDepartment');
+  }).populate('managementDepartment');
   return result;
 };
 
@@ -121,7 +123,7 @@ const deleteAdminById = async (id: string): Promise<IAdmin | null> => {
       {
         session,
       }
-    ).populate('academicDepartment');
+    ).populate('managementDepartment');
 
     if (!admin) {
       throw new ApiError(httpStatus.NOT_FOUND, 'Failed to delete admin');
