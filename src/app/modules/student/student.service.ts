@@ -124,7 +124,10 @@ const updateStudentById = async (
     {
       new: true,
     }
-  );
+  )
+    .populate('academicSemester')
+    .populate('academicDepartment')
+    .populate('academicFaculty');
   return result;
 };
 
@@ -144,7 +147,10 @@ const deleteStudentById = async (id: string): Promise<IStudent | null> => {
       {
         session,
       }
-    );
+    )
+      .populate('academicSemester')
+      .populate('academicDepartment')
+      .populate('academicFaculty');
 
     if (!student) {
       throw new ApiError(httpStatus.NOT_FOUND, 'Failed to delete student');
