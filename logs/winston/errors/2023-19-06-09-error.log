@@ -1,1 +1,0 @@
-Mon Jun 19 2023 9:11:57 [UMAS] error: Cast to ObjectId failed for value "648cc1118f1108" (type string) at path "_id" for model "AcademicSemester"
