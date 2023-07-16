@@ -17,7 +17,6 @@ import { IFaculty } from '../faculty/faculty.interface';
 import { ENUM_USER_ROLE } from '../../../enums/user';
 import { Admin } from '../admin/admin.model';
 import { IAdmin } from '../admin/admin.interface';
-import bcrypt from 'bcrypt';
 
 const createStudent = async (
   student: IStudent,
@@ -31,12 +30,6 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_pass as string; //we have to set the password into the user object
   }
-
-  //! hash password
-  user.password = await bcrypt.hash(
-    user.password,
-    Number(config.bcrypt_salt_rounds)
-  );
 
   //!set role
   user.role = ENUM_USER_ROLE.STUDENT;

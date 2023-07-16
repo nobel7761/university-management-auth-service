@@ -1,0 +1,1 @@
+Sun Jul 16 2023 0:13:34 [UMAS] error: E11000 duplicate key error collection: university-management.students index: contactNo_1 dup key: { contactNo: "user_2" }
