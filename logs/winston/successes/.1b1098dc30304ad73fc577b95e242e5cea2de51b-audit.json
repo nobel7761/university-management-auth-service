@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\successes\\.1b1098dc30304ad73fc577b95e242e5cea2de51b-audit.json",
+    "files": [
+        {
+            "date": 1689753869733,
+            "name": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\successes\\2023-19-07-14-success.log",
+            "hash": "06c02ceeaadb96b16212990a60c1b9f74763e507eeda53d9b9cd63bd84955b6f"
+        },
+        {
+            "date": 1689757376332,
+            "name": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\successes\\2023-19-07-15-success.log",
+            "hash": "66cf902894804ff1b96453575b90eaf9b48fda83dc655d1e30dfef55e4f09eed"
+        }
+    ],
+    "hashType": "sha256"
+}
