@@ -29,6 +29,16 @@
             "date": 1689530425117,
             "name": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\errors\\2023-17-07-00-error.log",
             "hash": "a41d224fa5b24b1d36058138949679842144a34cb5f41b4fbcaef4e8d9778b0a"
+        },
+        {
+            "date": 1689749746051,
+            "name": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\errors\\2023-19-07-12-error.log",
+            "hash": "e4b358a201f5c502527f34a5203e236a8a2eb48bd19ec65b09948e90d4d25bc1"
+        },
+        {
+            "date": 1689750000262,
+            "name": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\errors\\2023-19-07-13-error.log",
+            "hash": "b9a166579d737040403fcdb3d9f448cfed414180502cc2ae29e772ad7586a131"
         }
     ],
     "hashType": "sha256"
