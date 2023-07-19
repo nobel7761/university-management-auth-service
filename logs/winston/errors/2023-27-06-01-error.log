@@ -1,4 +1,0 @@
-Tue Jun 27 2023 1:56:32 [UMAS] error: Cannot populate path `admin.academicDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.
-Tue Jun 27 2023 1:58:12 [UMAS] error: E11000 duplicate key error collection: university-management.admins index: email_1 dup key: { email: "rokaiahfardous@gmail.com" }
-Tue Jun 27 2023 1:59:0 [UMAS] error: E11000 duplicate key error collection: university-management.admins index: contactNo_1 dup key: { contactNo: "01621277340" }
-Tue Jun 27 2023 1:59:21 [UMAS] error: Cannot populate path `admin.academicDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.

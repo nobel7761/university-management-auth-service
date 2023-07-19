@@ -1,5 +1,0 @@
-Sat Jun 24 2023 0:54:45 [UMAS] error: Cast to ObjectId failed for value "310300001" (type string) at path "_id" for model "Student"
-Sat Jun 24 2023 0:56:52 [UMAS] error: Cast to ObjectId failed for value "310300002" (type string) at path "_id" for model "Student"
-Sat Jun 24 2023 0:57:59 [UMAS] error: Cast to ObjectId failed for value "{ id: '310300002' }" (type Object) at path "_id" for model "Student"
-Sat Jun 24 2023 0:58:38 [UMAS] error: Cast to ObjectId failed for value "{ id: '310300002' }" (type Object) at path "_id" for model "Student"
-Sat Jun 24 2023 0:59:52 [UMAS] error: Cast to ObjectId failed for value "{ id: '310300002' }" (type Object) at path "_id" for model "Student"
