@@ -1,1 +1,0 @@
-Mon Jun 19 2023 1:1:9 [UMAS] error: Plan executor error during findAndModify :: caused by :: Performing an update on the path '_id' would modify the immutable field '_id'

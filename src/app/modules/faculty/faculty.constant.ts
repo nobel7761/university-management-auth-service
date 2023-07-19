@@ -18,4 +18,5 @@ export const facultyFilterableFields = [
   'academicFaculty',
   'academicDepartment',
   'emergencyContactNo',
+  'designation',
 ];

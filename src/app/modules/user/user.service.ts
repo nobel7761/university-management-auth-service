@@ -32,7 +32,7 @@ const createStudent = async (
   }
 
   //!set role
-  user.role = 'student';
+  user.role = ENUM_USER_ROLE.STUDENT;
 
   const academicSemester = await AcademicSemester.findById(
     student.academicSemester
