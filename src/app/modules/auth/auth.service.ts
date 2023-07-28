@@ -2,13 +2,15 @@ import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { User } from '../user/user.model';
 import {
+  IChangePassword,
   ILoginUser,
   ILoginUserResponse,
   IRefreshTokenResponse,
 } from './auth.interface';
-import { Secret } from 'jsonwebtoken';
+import { JwtPayload, Secret } from 'jsonwebtoken';
 import config from '../../../config';
 import { jwtHelpers } from '../../../helpers/jwtHelpers';
+// import bcrypt from 'bcrypt';
 
 const loginUser = async (
   payload: ILoginUser
@@ -50,6 +52,59 @@ const loginUser = async (
   };
 };
 
+const changePassword = async (
+  user: JwtPayload | null,
+  payload: IChangePassword
+): Promise<void> => {
+  const { oldPassword, newPassword } = payload;
+
+  //checking user exists or not
+  //! process 1
+  // const isUserExist = await User.isUserExist(user?.userId);
+
+  //! process 2
+  const isUserExist = await User.findOne({ id: user?.userId }).select(
+    '+password'
+  );
+
+  if (!isUserExist)
+    throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
+
+  //checking password matched or not
+  if (
+    isUserExist.password &&
+    !(await User.isPasswordMatched(oldPassword, isUserExist.password))
+  ) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'Old Password is incorrect!');
+  }
+
+  //! process 1
+  // //hashing password before saving
+  // const newHashedPassword = await bcrypt.hash(
+  //   newPassword,
+  //   Number(config.bcrypt_salt_rounds)
+  // );
+
+  // // making variable to update data
+  // const query = { id: user?.userId };
+
+  // const updatedData = {
+  //   password: newHashedPassword,
+  //   needsPasswordChange: false,
+  //   passwordChangedAt: new Date(),
+  // };
+
+  // //update password
+  // await User.findOneAndUpdate(query, updatedData);
+
+  //! process 2
+  // data update
+  isUserExist.needsPasswordChange = false;
+  isUserExist.password = newPassword;
+
+  isUserExist.save();
+};
+
 const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   let verifiedToken = null;
   // verify token
@@ -85,4 +140,5 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
 export const AuthService = {
   loginUser,
   refreshToken,
+  changePassword,
 };

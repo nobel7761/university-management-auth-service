@@ -10,6 +10,9 @@ const UserSchema = new Schema<IUser, UserModel>(
     role: { type: String, required: true },
     password: { type: String, required: true, select: 0 }, // select: 0 means, password will not return when a user will be created
     needsPasswordChange: { type: Boolean, default: true },
+    passwordChangedAt: {
+      type: Date,
+    },
     student: {
       type: Schema.Types.ObjectId,
       ref: 'Student',
@@ -70,6 +73,10 @@ UserSchema.pre('save', async function (next) {
     user.password,
     Number(config.bcrypt_salt_rounds)
   );
+
+  if (!user.needsPasswordChange) {
+    user.passwordChangedAt = new Date();
+  }
 
   next();
 });

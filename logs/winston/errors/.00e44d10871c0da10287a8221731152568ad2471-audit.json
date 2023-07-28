@@ -14,6 +14,11 @@
             "date": 1689757376346,
             "name": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\errors\\2023-19-07-15-error.log",
             "hash": "ce723483412193ca4703309ed4bd99cb949b86d1fa0035ea8c7825e1d4de2083"
+        },
+        {
+            "date": 1689762493640,
+            "name": "E:\\L2\\3. Backend Brainiac\\university-management-auth-service\\logs\\winston\\errors\\2023-19-07-16-error.log",
+            "hash": "fc845c1a5bfb2d8fb4921e550b513ba6f48444e108a44079867da5f00f06b67e"
         }
     ],
     "hashType": "sha256"
