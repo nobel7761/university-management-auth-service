@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Nobel\\L2\\3. Mongoose\\university-management-auth-service\\logs\\winston\\successes\\.7b95e708c66dc78c162c05539965093fbf07d146-audit.json",
+    "files": [
+        {
+            "date": 1696824658434,
+            "name": "C:\\Nobel\\L2\\3. Mongoose\\university-management-auth-service\\logs\\winston\\successes\\2023-09-10-10-success.log",
+            "hash": "a61cdb2fcf3779016bcd61865328e68cd5f31d403009d67d1b3fdd3dd5496be3"
+        }
+    ],
+    "hashType": "sha256"
+}
