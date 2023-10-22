@@ -8,6 +8,7 @@ const redisClient = createClient({
   url: config.redis.url,
 });
 
+//! we need to publish and subscribe as in some cases we may need publish and in some cases we need subscribe
 const redisPubClient = createClient({
   url: config.redis.url,
 });

@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Nobel\\L2\\6. sql\\University-Management-Auth-Service\\logs\\winston\\successes\\.9990b797a172c0985f4cf85fcc1966747bee74d9-audit.json",
+    "files": [
+        {
+            "date": 1697953218602,
+            "name": "C:\\Nobel\\L2\\6. sql\\University-Management-Auth-Service\\logs\\winston\\successes\\2023-22-10-11-success.log",
+            "hash": "eb36c7dd155d244bcf91349dd344ee5265d362a16c2582316b13b5493bfe5027"
+        }
+    ],
+    "hashType": "sha256"
+}
